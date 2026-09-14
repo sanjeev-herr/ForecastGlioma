@@ -1,0 +1,11 @@
+# Input data (patient workbook is private; not tracked)
+data/
+
+# Generated model outputs and plots
+results/
+Rplots.pdf
+
+# R session artifacts
+.Rhistory
+.RData
+.Rproj.user/
