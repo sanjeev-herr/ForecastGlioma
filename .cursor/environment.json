@@ -1,8 +1,5 @@
 {
   "name": "ForecastGlioma R",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
   "user": "ubuntu",
-  "install": "Rscript -e 'pkgs <- c(\"caret\",\"pROC\",\"dplyr\",\"readxl\",\"ggplot2\",\"viridis\",\"randomForest\",\"e1071\"); invisible(lapply(pkgs, function(p) library(p, character.only = TRUE))); dir.create(\"results\", showWarnings = FALSE); cat(\"R\", as.character(getRversion()), \"- all pipeline packages loaded OK\\n\")'"
+  "install": "bash .cursor/install.sh"
 }
